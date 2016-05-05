@@ -234,3 +234,4 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/fsRemote/fsRemote.Droid/Resources/Resource.Designer.cs
