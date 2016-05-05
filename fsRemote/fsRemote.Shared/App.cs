@@ -5,12 +5,14 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace fsRemote
+namespace fsRemote.Shared
 {
     public class App : Application
     {
         public App()
         {
+            MainPage = new DeviceSearchPage();
+            return;
             // The root page of your application
             MainPage = new ContentPage
             {

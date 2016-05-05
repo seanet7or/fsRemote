@@ -10,5 +10,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dependencies\INetworkInterfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DeviceSearchPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DeviceSearchPageDeviceCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)fsApi\FsApiDescription.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)fsApi\Response\FsApiDescriptionResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\Defines.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\DeviceDiscoveredEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\DeviceDiscovery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\Discovery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\IDeviceSearchResponseListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\ISsdpClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\ISsdpClientFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\MSearchRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\MSearchResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\SearchResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ssdp\SearchTargets.cs" />
   </ItemGroup>
 </Project>

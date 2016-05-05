@@ -235,3 +235,5 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 /fsRemote/fsRemote.Droid/Resources/Resource.Designer.cs
+/Components/xamandroidsupportv7appcompat-23.1.1.1.info
+/Components
