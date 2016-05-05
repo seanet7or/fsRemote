@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fsRemote", "fsRemote\fsRemote\fsRemote.csproj", "{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fsRemote.Droid", "fsRemote\fsRemote.Droid\fsRemote.Droid.csproj", "{3F1BB054-8DEC-451B-8A47-DD65776BC93E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fsRemote.iOS", "fsRemote\fsRemote.iOS\fsRemote.iOS.csproj", "{FE12F04F-A459-4091-AC51-0062DAECF9A0}"
@@ -15,7 +13,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fsRemote.Windows", "fsRemot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fsRemote.WinPhone", "fsRemote\fsRemote.WinPhone\fsRemote.WinPhone.csproj", "{BAF6E464-71E7-45AC-9A1B-31DC84CDFE10}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "fsRemote.Shared", "fsRemote\fsRemote.Shared\fsRemote.Shared.shproj", "{9893F8A6-9BAB-4F15-BCFF-8586A9F26CF3}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{9893f8a6-9bab-4f15-bcff-8586a9f26cf3}*SharedItemsImports = 13
+		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{baf6e464-71e7-45ac-9a1b-31dc84cdfe10}*SharedItemsImports = 4
+		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{00f9aa1b-969c-4264-b856-999290e1cf52}*SharedItemsImports = 4
+		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{61189a96-1074-4fa5-81c3-5c5c1a4f4111}*SharedItemsImports = 4
+		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{3f1bb054-8dec-451b-8a47-dd65776bc93e}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|ARM = Ad-Hoc|ARM
@@ -43,54 +50,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|ARM.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|ARM.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|x64.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|x64.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|x86.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Ad-Hoc|x86.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|Any CPU.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|ARM.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|ARM.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|iPhone.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|x64.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|x64.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|x86.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.AppStore|x86.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|ARM.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|x64.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Debug|x86.Build.0 = Debug|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|ARM.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|ARM.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|iPhone.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|x64.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|x64.Build.0 = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|x86.ActiveCfg = Release|Any CPU
-		{8698E050-9BB1-4F73-A322-CB55DC5D8E1D}.Release|x86.Build.0 = Release|Any CPU
 		{3F1BB054-8DEC-451B-8A47-DD65776BC93E}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1BB054-8DEC-451B-8A47-DD65776BC93E}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{3F1BB054-8DEC-451B-8A47-DD65776BC93E}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
