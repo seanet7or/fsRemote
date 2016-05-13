@@ -109,18 +109,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpClientFactoryImplementation.cs" />
+    <Compile Include="HttpClientImplementation.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MainActivity.cs" />
     <Compile Include="NetworkInterfacesImplementation.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SsdpClient.cs" />
-    <Compile Include="SsdpClientImplementation.cs" />
+    <Compile Include="SsdpClientFactoryImplementation.cs" />
     <Compile Include="SsdpSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\values\colors.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\style.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values-v21\style.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\toolbar.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />

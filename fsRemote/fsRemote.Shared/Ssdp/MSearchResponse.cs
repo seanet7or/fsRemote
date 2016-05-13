@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
-using System.Net;
 
 namespace fsRemote.Shared.Ssdp
 {
-	public class MSearchResponse
+    public class MSearchResponse
 	{
 		// shall also be able to accept UUIDs that have not been formatted according to the rules specified below,
 		// as formatting rules are not specified in UPnP 1.0 other than the requirement that a UUID is a string.
@@ -78,7 +78,7 @@ namespace fsRemote.Shared.Ssdp
 							var seconds = maxAge.Split('=').ElementAt(1).Trim();
 							if (!Int32.TryParse(seconds, out secondsToCache))
 							{
-								Console.WriteLine("Error parsing CACHE-CONTROL header: " + line);
+                                Debug.WriteLine("Error parsing CACHE-CONTROL header: " + line);
 								secondsToCache = -1;
 							}
 						}
@@ -103,7 +103,7 @@ namespace fsRemote.Shared.Ssdp
 				}
 				catch (Exception e)
 				{
-					Console.WriteLine("Error parsing search response: " + e);
+					Debug.WriteLine("Error parsing search response: " + e);
 				}
 			}
 		}

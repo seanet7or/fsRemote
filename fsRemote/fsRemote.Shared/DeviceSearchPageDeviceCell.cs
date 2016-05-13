@@ -1,7 +1,4 @@
 ﻿using fsRemote.Shared.fsApi.Response;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms;
 
 namespace fsRemote.Shared
@@ -16,7 +13,7 @@ namespace fsRemote.Shared
             if (fsApiDesc != null)
             {
                 Text = fsApiDesc.FriendlyName;
-                Detail = fsApiDesc.Version;
+                Detail = fsApiDesc.WebFsApi;
             }
         }
     }

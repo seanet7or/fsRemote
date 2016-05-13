@@ -2,10 +2,7 @@
 using fsRemote.Shared.fsApi;
 using fsRemote.Shared.fsApi.Response;
 using fsRemote.Shared.Ssdp;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -26,10 +23,12 @@ namespace fsRemote.Shared
                 RefreshCommand = new Command(RefreshAsync)
             };
             Content = deviceListView;
-            System.Threading.ThreadPool.QueueUserWorkItem(RefreshAsync);
+            var t = new Task(RefreshAsync, TaskCreationOptions.LongRunning);
+            t.Start();
+
         }
 
-        private async void RefreshAsync(object obj)
+        private async void RefreshAsync()
         {
             await SearchInBackground();
         }

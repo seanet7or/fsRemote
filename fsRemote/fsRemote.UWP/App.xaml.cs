@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,14 +23,24 @@ namespace fsRemote.UWP
     /// </summary>
     sealed partial class App : Application
     {
+        
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         public App()
         {
+            
+            App.Current.UnhandledException += new UnhandledExceptionEventHandler(MyHandler);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+        }
+
+        private void MyHandler(object sender, UnhandledExceptionEventArgs args)
+        {
+            Exception e = (Exception)args.Exception;
+            Debug.WriteLine("MyHandler caught : " + e.Message);
         }
 
         /// <summary>

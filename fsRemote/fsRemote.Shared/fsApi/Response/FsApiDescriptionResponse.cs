@@ -2,16 +2,16 @@
 
 namespace fsRemote.Shared.fsApi.Response
 {
-	[XmlRootAttribute(ElementName = "netRemote")]
+	[XmlRoot(ElementName = "netRemote")]
 	public class FsApiDescriptionResponse
 	{
-		[XmlElementAttribute("friendlyName")]
+		[XmlElement("friendlyName")]
 		public string FriendlyName { get; set; }
 
-		[XmlElementAttribute("version")]
+		[XmlElement("version")]
 		public string Version { get; set; }
 
-		[XmlElementAttribute("webfsapi")]
+		[XmlElement("webfsapi")]
 		public string WebFsApi { get; set; }
 	}
 }

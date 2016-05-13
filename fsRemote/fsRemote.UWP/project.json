@@ -1,8 +1,5 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-    "System.Net.Primitives": "4.0.10",
-    "System.Net.Sockets": "4.0.0",
     "Xamarin.Forms": "2.2.0.31"
   },
   "frameworks": {

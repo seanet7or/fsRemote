@@ -21,7 +21,7 @@ namespace fsRemote.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new fsRemote.App());
+            LoadApplication(new fsRemote.Shared.App());
         }
     }
 }

@@ -18,7 +18,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{9893f8a6-9bab-4f15-bcff-8586a9f26cf3}*SharedItemsImports = 13
-		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{00f9aa1b-969c-4264-b856-999290e1cf52}*SharedItemsImports = 4
 		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{61189a96-1074-4fa5-81c3-5c5c1a4f4111}*SharedItemsImports = 4
 		fsRemote\fsRemote.Shared\fsRemote.Shared.projitems*{3f1bb054-8dec-451b-8a47-dd65776bc93e}*SharedItemsImports = 4
 	EndGlobalSection

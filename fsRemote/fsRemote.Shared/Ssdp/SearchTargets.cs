@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace fsRemote.Shared.Ssdp
+﻿namespace fsRemote.Shared.Ssdp
 {
     class SearchTargets
     {
