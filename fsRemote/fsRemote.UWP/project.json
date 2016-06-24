@@ -1,6 +1,7 @@
 ﻿{
   "dependencies": {
-    "Xamarin.Forms": "2.2.0.31"
+    "System.Runtime": "4.0.20",
+    "Xamarin.Forms": "2.3.0.49"
   },
   "frameworks": {
     "uap10.0": {}
